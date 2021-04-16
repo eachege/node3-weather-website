@@ -8,7 +8,7 @@ const forecast = (long, lat,callback) =>{
         } else if (body.error){
             callback('No match places found',undefined)    
         } else {
-            callback(undefined, body.current.weather_descriptions[0]+', Temperatura: '+ body.current.temperature +'con una sensación de '+body.current.feelslike)
+            callback(undefined, body.current.weather_descriptions[0]+', Temperature: '+ body.current.temperature +' feels like '+body.current.feelslike)
         }
     })
 
